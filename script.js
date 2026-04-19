@@ -222,21 +222,39 @@
         });
     }
 
-    // ===== Newsletter Form =====
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const emailInput = newsletterForm.querySelector('input');
-            const btn = newsletterForm.querySelector('button');
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fa-solid fa-check"></i>';
-                showNotification(`Subscribed successfully with ${emailInput.value}!`);
-                emailInput.value = '';
-                setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i>'; }, 2000);
-            }, 1500);
-        });
+    // ===== Newsletter Form (Brevo API) =====
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const emailInput = newsletterForm.querySelector('input');
+    const btn = newsletterForm.querySelector('button');
+    const originalBtn = btn.innerHTML;
+    
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: emailInput.value.trim() })
+      });
+      const data = await res.json();
+      
+      if (data.success) {
+        showNotification(data.message || 'Subscribed successfully!');
+        emailInput.value = '';
+      } else {
+        throw new Error(data.error);
+      }
+    } catch (err) {
+      showNotification('Failed to subscribe. Please try again.');
+    } finally {
+      btn.innerHTML = originalBtn;
+      btn.disabled = false;
     }
+  });
+}
 
     // ===== Notification System =====
     function showNotification(message) {
