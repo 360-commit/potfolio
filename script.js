@@ -230,11 +230,8 @@ goToSlide(currentSlide - 1);
 }
 resetAutoSlide();
 }
-}
-// ===== Contact Form =====
-// Replace the existing contactForm.addEventListener block in script.js with this:
+// ===== Contact Form (Netlify Compatible) =====
 contactForm.addEventListener('submit', (e) => {
-    // We still prevent default to show a loading state, but we let Netlify handle submission via fetch
     e.preventDefault();
     
     const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -242,7 +239,6 @@ contactForm.addEventListener('submit', (e) => {
     submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
     submitBtn.disabled = true;
 
-    // Submit form data to Netlify using fetch
     const formData = new FormData(contactForm);
     
     fetch('/', {
@@ -265,7 +261,6 @@ contactForm.addEventListener('submit', (e) => {
         submitBtn.disabled = false;
     });
 
-    // Reset button after 3 seconds
     setTimeout(() => {
         submitBtn.innerHTML = originalContent;
         submitBtn.disabled = false;
