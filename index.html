@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LONGTECH INNOVATION - Empowering the future with cutting-edge web development, SEO, graphic design, software development, AI automation, and IoT consultation services.">
+    <meta name="keywords" content="web development, SEO services, graphic design, software development, AI automation, IoT consultation, tech innovation, digital solutions, LONGTECH, website designer, search engine optimization, artificial intelligence, internet of things, mobile app development, UI/UX design">
+    <meta name="author" content="LONGTECH INNOVATION">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="LONGTECH INNOVATION - Empowering the Future Technology">
+    <meta property="og:description" content="Expert web development, SEO, graphic design, software development, AI automation & IoT consultation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.longtechinnovation.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>LONGTECH INNOVATION | Web Development, SEO, AI Automation & IoT Consultation</title>
+    <link rel="canonical" href="https://www.longtechinnovation.com">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for vector icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LONGTECH INNOVATION",
+        "url": "https://www.longtechinnovation.com",
+        "slogan": "Empowering the future Technology",
+        "description": "Expert web development, SEO, graphic design, software development, AI automation and IoT consultation services.",
+        "sameAs": []
+    }
+    </script>
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <span class="loader-text">LONGTECH</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </span>
+                <span class="logo-text">LONGTECH <span class="highlight">INNOVATION</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-sun" id="themeIcon"></i>
+                </button>
+                <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-up">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Innovation Driven Solutions</span>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-delay="100">
+                    Empowering the Future
+                    <span class="gradient-text">Technology</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-delay="200">
+                    We craft digital experiences that transform businesses. From cutting-edge web development to intelligent AI automation, LONGTECH INNOVATION is your trusted technology partner.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-delay="300">
+                    <a href="#services" class="btn btn-primary">
+                        <span>Explore Services</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">% Client Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">+ Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-delay="300">
+                <div class="hero-graphic">
+                    <div class="floating-card card-1">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Web Dev</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>AI / ML</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span>IoT</span>
+                    </div>
+                    <div class="hero-circle"></div>
+                    <div class="hero-circle circle-2"></div>
+                    <div class="hero-circle circle-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-circle-info"></i> About Us</span>
+                <h2 class="section-title">Who We <span class="gradient-text">Are</span></h2>
+                <p class="section-subtitle">Pioneering digital transformation with innovation and excellence</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <h3>Driving Innovation Through <span class="gradient-text">Technology</span></h3>
+                    <p>LONGTECH INNOVATION is a forward-thinking technology company dedicated to empowering businesses with cutting-edge digital solutions. We combine creativity, technical expertise, and strategic thinking to deliver results that matter.</p>
+                    <p>Our team of skilled professionals specializes in web development, search engine optimization, graphic design, software engineering, artificial intelligence automation, and Internet of Things consultation. We believe in building long-term partnerships that drive sustainable growth.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Result Oriented</h4>
+                                <p>Focused on delivering measurable outcomes for your business</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Secure & Reliable</h4>
+                                <p>Enterprise-grade security in every solution we build</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock assistance whenever you need it</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-placeholder">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <div class="tech-stack">
+                                <span><i class="fa-brands fa-html5"></i></span>
+                                <span><i class="fa-brands fa-css3-alt"></i></span>
+                                <span><i class="fa-brands fa-js"></i></span>
+                                <span><i class="fa-brands fa-react"></i></span>
+                                <span><i class="fa-brands fa-node-js"></i></span>
+                                <span><i class="fa-brands fa-python"></i></span>
+                                <span><i class="fa-brands fa-figma"></i></span>
+                                <span><i class="fa-brands fa-aws"></i></span>
+                            </div>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container services-container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-gears"></i> What We Offer</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Comprehensive technology solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1: Web Development -->
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Custom, responsive, and high-performance websites built with modern technologies. From landing pages to complex web applications, we deliver pixel-perfect solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+                        <li><i class="fa-solid fa-check"></i> E-Commerce Solutions</li>
+                        <li><i class="fa-solid fa-check"></i> CMS Integration</li>
+                        <li><i class="fa-solid fa-check"></i> Progressive Web Apps</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2: SEO -->
+                <div class="service-card featured" data-aos="fade-up" data-delay="100">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Dominate search rankings with our data-driven SEO strategies. We optimize your online presence to drive organic traffic and increase visibility.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Technical SEO Audit</li>
+                        <li><i class="fa-solid fa-check"></i> Keyword Research</li>
+                        <li><i class="fa-solid fa-check"></i> On-Page Optimization</li>
+                        <li><i class="fa-solid fa-check"></i> Link Building Strategy</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3: Graphic Design -->
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Stunning visual designs that capture your brand essence. From logos to marketing materials, we create visuals that leave lasting impressions.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Brand Identity</li>
+                        <li><i class="fa-solid fa-check"></i> UI/UX Design</li>
+                        <li><i class="fa-solid fa-check"></i> Marketing Materials</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Graphics</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4: Software Development -->
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions engineered for performance and scalability. We build robust applications that streamline your business operations.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Custom Applications</li>
+                        <li><i class="fa-solid fa-check"></i> API Development</li>
+                        <li><i class="fa-solid fa-check"></i> Database Architecture</li>
+                        <li><i class="fa-solid fa-check"></i> Cloud Deployment</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5: AI Automation -->
+                <div class="service-card" data-aos="fade-up" data-delay="400">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>AI Automation</h3>
+                    <p>Harness the power of artificial intelligence to automate workflows, enhance decision-making, and unlock new business opportunities.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Machine Learning Models</li>
+                        <li><i class="fa-solid fa-check"></i> Chatbot Development</li>
+                        <li><i class="fa-solid fa-check"></i> Process Automation</li>
+                        <li><i class="fa-solid fa-check"></i> Data Analytics</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6: IoT Consultation -->
+                <div class="service-card" data-aos="fade-up" data-delay="500">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3>IoT Consultation</h3>
+                    <p>Expert guidance on Internet of Things implementation. We help you design, deploy, and manage connected device ecosystems.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> IoT Architecture Design</li>
+                        <li><i class="fa-solid fa-check"></i> Sensor Integration</li>
+                        <li><i class="fa-solid fa-check"></i> Data Pipeline Setup</li>
+                        <li><i class="fa-solid fa-check"></i> Security Assessment</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container portfolio-container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-briefcase"></i> Our Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of our finest digital creations</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Graphic Design</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="ai">AI / IoT</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Full-stack web development</p>
+                            <a href="#" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Identity Suite</h4>
+                            <p>Complete graphic design</p>
+                            <a href="#" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>AI Chatbot System</h4>
+                            <p>Natural language processing</p>
+                            <a href="#" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Inventory Management</h4>
+                            <p>Custom ERP software</p>
+                            <a href="#" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Restaurant Booking</h4>
+                            <p>Reservation web app</p>
+                            <a href="#" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fa-solid fa-house-signal"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Smart Home IoT</h4>
+                            <p>Connected device network</p>
+                            <a href="#" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container testimonials-container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-quote-left"></i> Testimonials</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+                <p class="section-subtitle">Real feedback from businesses we've helped transform</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"LONGTECH INNOVATION transformed our online presence completely. Their web development and SEO expertise helped us achieve a 300% increase in organic traffic. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <span>CEO, TechVentures Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"The AI automation solution they built for our customer service reduced response times by 80%. Their team is incredibly knowledgeable and professional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <span>CTO, GlobalRetail Corp.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Their IoT consultation helped us deploy a smart manufacturing system that improved efficiency by 45%. LONGTECH truly understands the future of technology."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Amanda Roberts</h4>
+                                <span>Operations Director, IndustrialTech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i> Get in Touch</span>
+                <h2 class="section-title">Let's Build <span class="gradient-text">Together</span></h2>
+                <p class="section-subtitle">Ready to start your next project? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>Plateau State,Jos Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone Number</h4>
+                            <p>+2347045953060</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Address</h4>
+                            <p>longtechinnovation@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" name="contact" method="POST" netlify data-netlify="true" data-aos="fade-left">
+    <!-- Hidden honeypot for spam protection -->
+    <input type="text" name="bot-field" hidden style="display:none;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Grace" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Grace@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-list"></i>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="web-development">Website Development</option>
+                                <option value="seo">SEO Optimization</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="software-development">Software Development</option>
+                                <option value="ai-automation">AI Automation</option>
+                                <option value="iot-consultation">IoT Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fa-solid fa-message"></i>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>LONGTECH <span class="highlight">INNOVATION</span></span>
+                    </a>
+                    <p class="footer-description">Empowering the future with cutting-edge technology solutions. Your trusted partner for web development, AI automation, IoT consultation, and more.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Software Development</a></li>
+                        <li><a href="#services">AI Automation</a></li>
+                        <li><a href="#services">IoT Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest tech insights and updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Your email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> LONGTECH INNOVATION. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
